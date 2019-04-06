@@ -1,6 +1,4 @@
 const { graphql, buildSchema } = require('graphql')
-const express = require('express')
-const graphqlHTTP = require('express-graphql')
 
 // create a memory db
 const db = {
@@ -79,12 +77,42 @@ const resolvers = () => {
   }
   return { carsByType, carsById, insertCar }
 }
+// execute the queries
+const executeQuery = async () => {
+  const mutation = `
+  mutation {
+    insertCar(brand: "Nissan", color: "black", doors:4, type: SUV){
+        brand
+        color
+        id
+     }
+   }
+  `
+  const resOne = await graphql(schema, mutation, resolvers())
+  console.log(resOne.data)
+  const mutationWithVariables = `
+  mutation insertCar($brand: String!, $color: String!, $doors:Int!, $type: CarTypes!){
+    insertCar(brand: $brand, color: $color, doors: $doors, type: $type){
+        brand
+        color
+        id
+     }
+   }
+   
+  `
+  const resTwo = await graphql(
+    schema,
+    mutationWithVariables,
+    resolvers(),
+    null,
+    {
+      brand: 'Honda',
+      color: 'black',
+      doors: 4,
+      type: 'SUV'
+    }
+  )
 
-const app = express()
-
-app.use(
-  '/graphql',
-  graphqlHTTP({ schema: schema, rootValue: resolvers(), graphiql: true })
-)
-app.listen(3000)
-console.log('GraphQL server is listening on PORT 3000')
+  console.log(resTwo.data)
+}
+executeQuery()
