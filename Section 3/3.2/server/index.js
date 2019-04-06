@@ -3,7 +3,7 @@ const { ApolloServer, gql } = require('apollo-server')
 const cars = [
   {
     id: '1',
-    brand: 'Toyota Corola',
+    brand: 'Toyota Corolla',
     color: 'Blue',
     doors: 4,
     type: 'Sedan',

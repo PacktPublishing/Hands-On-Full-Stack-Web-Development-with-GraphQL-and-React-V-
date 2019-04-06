@@ -15,4 +15,5 @@ const resolvers = () => {
 }
 
 // execute the query
-graphql(schema, '{ message }', resolvers())
+const result = graphql(schema, '{ message }', resolvers())
+console.log(result)

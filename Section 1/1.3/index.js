@@ -26,4 +26,3 @@ const executeQuery = async () => {
   console.log(result)
 }
 executeQuery()
-
