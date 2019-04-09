@@ -10,4 +10,4 @@
 
 `cd server`
 
-`cd npm run dev`
+`npm run dev`
