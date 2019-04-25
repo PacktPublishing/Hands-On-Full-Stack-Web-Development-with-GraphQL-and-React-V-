@@ -1,11 +1,7 @@
 # Hands-On Full-Stack Web Development with GraphQL and React [Video]
 This is the code repository for [Hands-On Full-Stack Web Development with 
 
-GraphQL and React [Video]](https://www.packtpub.com/web-development/hands-
-
-full-stack-web-development-graphql-and-react-video?
-
-utm_source=github&utm_medium=repository&utm_campaign=9781838555054), published 
+GraphQL and React [Video]](https://www.packtpub.com/web-development/hands-full-stack-web-development-graphql-and-react-video?utm_source=github&utm_medium=repository&utm_campaign=9781838555054), published 
 
 by [Packt](https://www.packtpub.com/?utm_source=github). It contains all the 
 
@@ -97,21 +93,11 @@ recommend the following configuration:
 ## Related Products
 * [JavaScript Choice Made Easy - Angular v. React v. Vue [Video]]
 
-(https://www.packtpub.com/application-development/javascript-choice-made-easy-
+(https://www.packtpub.com/application-development/javascript-choice-made-easy-angular-v-react-v-vue-video?utm_source=github&utm_medium=repository&utm_campaign=9781788625326)
 
-angular-v-react-v-vue-video?
-
-utm_source=github&utm_medium=repository&utm_campaign=9781788625326)
-
-* [Learning Apollo GraphQL [Video]](https://www.packtpub.com/web-
-
-development/learning-apollo-graphql-video?
-
-utm_source=github&utm_medium=repository&utm_campaign=9781838556365)
+* [Learning Apollo GraphQL [Video]](https://www.packtpub.com/web-development/learning-apollo-graphql-video?utm_source=github&utm_medium=repository&utm_campaign=9781838556365)
 
 * [Hands-on Application Building with GraphQL [Video]]
 
-(https://www.packtpub.com/web-development/hands-application-building-graphql-
-
-video?utm_source=github&utm_medium=repository&utm_campaign=9781788991865)
+(https://www.packtpub.com/web-development/hands-application-building-graphql-video?utm_source=github&utm_medium=repository&utm_campaign=9781788991865)
 
